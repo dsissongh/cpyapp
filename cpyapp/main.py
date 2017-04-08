@@ -9,5 +9,12 @@ class webapp():
 	def version(self):
 		return cherrypy.__version__
 
+	@cherrypy.expose
+	def testing(self):
+		return "more testing"
+
+
+
 if __name__ == '__main__':
     cherrypy.quickstart(webapp())
+    root.test1.test = testing()
